@@ -6,8 +6,12 @@ import(
 
 func Router () {
 
-  iris.Get("/", index)
+  iris.Config.Render.Template.Extensions = []string{".jade"}
+iris.Config.Render.Template.Layout = "layouts/layout.jade"
+  iris.Config.Render.Template.Engine = iris.JadeEngine
 
-  iris.Listen(":8000")
+  iris.Get("/index", index)
+
+  iris.Listen(":8080")
 
 }

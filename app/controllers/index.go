@@ -1,4 +1,4 @@
-package app
+package controllers
 
 import(
   "github.com/kataras/iris"
@@ -14,7 +14,7 @@ type Subtitle struct{
   Description string
 }
 
-func index (ctx *iris.Context) {
+func Index_index (ctx *iris.Context) {
 
   first := Subtitle{Title: "First Subtitle", Description: "I'm the first subtitle"}
   second := Subtitle{Title: "Second Subtitle", Description: "I'm the second subtitle"}
@@ -24,5 +24,5 @@ func index (ctx *iris.Context) {
     Second: []*Subtitle{&first, &second},
   }
 
-  ctx.MustRender("index.jade", data)
+  ctx.MustRender("index_index.jade", data)
 }

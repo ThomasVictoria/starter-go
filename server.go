@@ -1,7 +1,7 @@
 package main
 
 import(
-  "github.com/ThomasVictoria/go-server/app"
+  "github.com/ThomasVictoria/starter-go/app"
 )
 
 func main() {

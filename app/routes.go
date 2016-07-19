@@ -1,7 +1,7 @@
 package app
 
 import(
-  "github.com/ThomasVictoria/go-server/app/controllers"
+  "github.com/ThomasVictoria/starter-go/app/controllers"
   "github.com/kataras/iris"
 )
 
